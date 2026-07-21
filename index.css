@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #050816;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gradient-text {
+    color: #3B82F6;
+}
+
+.glass-card {
+    background-color: #111827;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.glass-card:hover {
+    border-color: #3B82F6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #3B82F6;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #3B82F6;
+    color: white;
+}
+
+.btn-outline:hover {
+    background-color: #3B82F6;
+}
+
+.glass-nav {
+    background-color: #050816;
+    border-bottom: 1px solid #333333;
+    padding: 15px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #3B82F6;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a:hover {
+    color: #3B82F6;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.roles li {
+    display: inline-block;
+    background-color: #111827;
+    color: #9ca3af;
+    padding: 5px 10px;
+    margin: 5px 5px 5px 0;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.hero-image {
+    text-align: right;
+}
+
+.hero-image img {
+    width: 250px;
+    border-radius: 50%;
+    border: 3px solid #3B82F6;
+}
+
+.floating-shape {
+    display: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.cards-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.badges {
+    margin-top: 15px;
+}
+
+.badges span {
+    display: inline-block;
+    background-color: #1f2937;
+    color: #3B82F6;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 5px 5px 0 0;
+}
+
+.project-card {
+    padding: 0;
+}
+
+.project-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project-content p {
+    color: #9ca3af;
+    font-size: 14px;
+    margin: 10px 0 20px 0;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact-item {
+    background-color: #111827;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111827;
+    margin-top: 50px;
+    color: #9ca3af;
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-image {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .grid,
+    .cards-4,
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #111827;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 15px 0;
+        border-bottom: 1px solid #333333;
+    }
+
+    .menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+}
